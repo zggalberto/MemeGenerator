@@ -3,18 +3,20 @@ from os import path
 
 
 memefolder='images'
-memename='bart-simpson.gif'
-outputname='meme.png'
+memename='vegeta.jpg'
+outputname='memev.png'
 memeimage=path.join(memefolder, memename)
 memeresult=path.join(memefolder, outputname)
 
-text="All work and no play makes jack a dull boy."
-textsize=30
-origen=(50, 40)
+text1="cuando ves el nivel de los \n programadores en codingame:"
+text2="aumentaron su ki de golpe"
+
+textsize=50
+origen1=(50, 25)
+origen2=(50, 360)
 
 #Loads font and defines size
 comicFont = ImageFont.truetype('/usr/share/fonts/opentype/comic-neue/ComicNeue_Bold.otf', textsize)
-
 
 #Opens meme image
 meme = Image.open(memeimage).convert('RGB')
@@ -22,9 +24,8 @@ canvas = ImageDraw.Draw(meme)
 
 #write Text replace TODO with loop
 
-for i in range(0,18):
-    origen=(50, 50+(i*35))
-    canvas.text(origen, text, font=comicFont, fill ="white")
+canvas.text(origen1, text1, font=comicFont, fill ="green")
+canvas.text(origen2, text2, font=comicFont, fill ="green")
 
 #Show image and save it
 meme.show()
