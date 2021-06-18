@@ -8,8 +8,8 @@ outputname='memev.png'
 memeimage=path.join(memefolder, memename)
 memeresult=path.join(memefolder, outputname)
 
-text1="cuando ves el nivel de los \n programadores en codingame:"
-text2="aumentaron su ki de golpe"
+text1="cuando comparas tu programa \n en codingame:"
+text2="Esos insectos siempre \n van un paso adelante"
 
 textsize=50
 origen1=(50, 25)
